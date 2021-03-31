@@ -1,0 +1,958 @@
+@import "fonts.scss";
+@import "base.scss";
+@import "colors-variables.scss";
+
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0px 20px 0px;
+}
+
+.heading__inner {
+  align-items: center; 
+  margin-top: -9px;
+  display: flex;
+}
+
+.heading__logo {
+  display: inherit;
+  align-items: inherit;
+  padding: 4px 59px 0px 0px;
+  letter-spacing: 0.5px;
+}
+
+.heading__title {
+  margin-left: 5px;
+  font-weight: 500;
+  font-size: 20px;
+  margin-right: 62px;
+}
+
+.navigation {
+  min-width: 414px;
+  display: flex;
+  margin-right: 46px;
+  justify-content: space-between;
+  margin-top: 9px;
+}
+
+.navigation__link {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.heading__contacts {
+  padding-top: 61px;
+}
+
+.contacts__numbers {
+  width: 210px;
+  line-height: 25px;
+}
+
+.contacts__number {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+}
+
+.contacts__select {
+  background-image: url("/img/stuff/dropdown-stuff/line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  width: 26px;
+  height: 8px;
+  cursor: pointer;
+}
+
+.contacts__app {
+  height: 22px;
+  width: 22px;
+  border: none;
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  padding-top: 14px;
+  display: inline-block;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.contacts__telegram {
+  background-image: url("/img/stuff/telegram.svg");
+  background-position-x: 36%;
+  background-position-y: 56%;
+  margin-left:  8px;
+  margin-right: 11px;
+}
+
+.contacts__viber {
+  background-image: url("/img/stuff/viber.svg");
+  background-position-y: 60%;
+}
+
+.contacts__subtext {
+  font-size: 13px;
+  margin-top: 2px;
+  letter-spacing: 0.4px;
+  width: max-content;
+}
+
+.heading__feedback {
+  margin-top: 12px;
+  height: 37px;
+  border-radius: 30px;
+  border: none;
+  margin-top: 7px;
+  margin-left: auto;
+  background-image: url("/img/stuff/message.svg");
+  background-position: center;
+  background-position-x: 30px;
+  padding: 0 27px 0 60px;
+  font-size: 15px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  margin-top: -1px;
+}
+
+.header__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: 97px 0 71px 20px;
+}
+
+.header__background {
+  position: absolute;
+  right: 94px;
+  bottom: -60px;
+  z-index: 11;
+  pointer-events: none;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 50px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 70px;
+  margin-bottom: 9px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.header__subtext {
+  font-size: 20px;
+  padding: 19px 0px 49px;
+}
+
+.header__button {
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  font-size: 19px;
+  letter-spacing: 0.25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.header__advantages {
+  display: flex;
+  padding: 71px 0px 0px 5px;
+}
+
+.advantage__text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.header__advantage {
+  display: inherit;
+}
+
+.header__advantage:not(:last-child) {
+  margin-right: 43px;
+}
+
+.advantage__img {
+  margin-right: 20px;
+  transition: 0.3s ease;
+}
+
+.thumb__up {
+  margin-right: 19px;
+}
+
+.cycle {
+  margin-right: 21px;
+}
+
+.about {
+  background-image: url("/img/pink-background.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: -1px 0px 66px;
+  display: flex;
+  padding-top: 203px;
+  position: relative;
+}
+
+.about__aside-img {
+  position: absolute;
+  right: 0px;
+  top: 59px;
+  z-index: -1;
+}
+
+.about__inner {
+  padding-top: 31px;
+  display: inherit;
+  justify-content: space-between;
+}
+
+.about__image {
+  clip-path: circle(50% at 50% 50%);
+  margin: -4px 97px 0px -60px;
+}
+
+.about__content {
+  max-width: 600px;
+  padding-top: 66px;
+}
+
+.about__text {
+  max-width: 480px;
+  margin-top: 62px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.products__second {
+  background-image: url("/img/pink-background-bottom.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  padding-bottom: 247px;
+}
+
+.products__left-backgr {
+  position: absolute;
+  left: 0px;
+  top: -239px;
+  z-index: -1;
+}
+
+.products__inner {
+  padding-top: 74px;
+  padding-bottom: 50px;
+}
+
+.products__heading {
+  text-align: center;
+}
+
+.products__description {
+  text-align: center;
+  line-height: 31.5px;
+  font-size: 18px;
+  padding-top: 41px;
+}
+
+.products__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 89px 0px 49px;
+  row-gap: 137px;
+  column-gap: 28px;
+  justify-content: center;
+}
+
+.product__item,
+.product__item-fake {
+  border-radius: 20px;
+}
+
+.product__item {
+  transition: 0.2s ease;
+  position: relative;
+}
+
+.product__image {
+  width: 100%;
+}
+
+.product__item-fake {
+  transition: 0.3s ease;
+  padding: 20px;
+  margin: -20px;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  box-shadow: 0 0 35px 8px $box-shadow-color;
+}
+
+.product__item:hover {
+  .product__item-fake {
+    opacity: 1;
+    z-index: 99;
+  }
+}
+
+.product__item-fake:hover ~ .product__item {
+  z-index: 5;
+}
+
+.product__name {
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 700;
+  padding: 11px 9px 9px;
+}
+
+.product__other {
+  padding-left: 10px;
+}
+
+.product__cost {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.2px;
+}
+
+.product__banknote {
+  font-size: inherit;
+  font-family: inherit;
+  margin-right: 29px;
+  margin-left: -5px;
+  font-size: 24px;
+}
+
+.product__buy {
+  border: 1px solid;
+  width: 111px;
+  height: 37px;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -6px;
+}
+
+.product__description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 22px;
+}
+
+.product__subtext {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 18px;
+}
+
+.product__delivery {
+  font-weight: 500;
+  display: inline-block;
+}
+
+.product__date {
+  font-weight: 700;
+  padding-left: 31px;
+}
+
+.offer {
+  margin-top: -1px;
+}
+
+.offer__backgrounds {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.offer__background-left {
+  margin-top: 58px;
+}
+
+.offer__background-right {
+  position: absolute;
+  right: -125px;
+  bottom: 3px;
+}
+
+.offer__inner {
+  padding: 62px 0 0 185px;
+  z-index: 2;
+  position: relative;
+}
+
+.offer__description {
+  padding: 30px 0 39px;
+  line-height: 30px;
+  max-width: 785px;
+  font-size: 18px;
+  letter-spacing: 0.23px;
+}
+
+.offer__form {
+  padding-bottom: 95px;
+}
+
+.offer__sended {
+  padding: 112px 0px 255px;
+}
+
+.resend__subheader {
+  padding: 60px 0px 46px;
+}
+
+.form__outer {
+  display: flex;
+  padding-bottom: 29px;
+}
+
+.offer__specification {
+  font-weight: 700;
+  font-size: 18px;
+  width: 100%;
+  padding-bottom: 31px;
+}
+
+.offer__checkboxes {
+  padding-top: 16px;
+}
+
+.offer__checkbox {
+  margin-bottom: 18px;
+}
+
+.offer__contacts {
+  max-width: 495px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+input {
+  width: 228px;
+  height: 50px;
+  border-radius: 30px;
+  border: 2px solid $offer-input;
+  padding: 0px 16px;
+  margin-bottom: 23px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+
+.offer__options {
+  padding-left: 40px;
+}
+
+.checkbox__name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.offer__submit {
+  width: 294px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.instructions {
+  margin-top: -4px;
+}
+
+.instructions__inner {
+  text-align: center;
+  padding-top: 86px;
+}
+
+.instructions__explanation,
+.instructions__sub-explanation {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.instructions__explanation {
+  padding-top: 32px;
+}
+
+.instructions__sub-explanation {
+  padding: 52px 0 62px;
+}
+
+.instructions__steps {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.instructions__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 60px 0px;
+  margin: 0px 0px 0px 64px;
+}
+
+.instructions__step:nth-child(2) {
+  position: relative;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    border: 1px dashed #E4AAC7;
+    width: 222px;
+    position: absolute;
+    top: 35px;
+  }
+
+  &:before {
+    left: -130px;
+  }
+
+  &:after {
+    right: -178px;
+  }
+}
+
+.instructions__details {
+  padding-top: 35px;
+}
+
+.instagram {
+  background: url("/img/footer-wave-background.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.instagram__inner {
+  padding: 0px;
+}
+
+.instagram__heading {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 132px;
+}
+
+.instagram__text {
+  justify-content: center;
+  align-items: center;
+  display: inherit;
+  padding-bottom: 51px;
+}
+
+.instagram__button {
+  width: 400px;
+  height: 52px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.instagram__list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 24.5% 38% 31.5%;
+  column-gap: 44px;
+  padding: 96px 0px 356px;
+}
+
+.instagram__list-1,
+.instagram__list-2,
+.instagram__list-3 {
+  display: grid;
+
+  & .instagram__item {
+    align-self: center;
+
+    &:first-child {
+      align-self: flex-start;
+    }
+
+    &:last-child {
+      align-self: flex-end;
+    }
+  }
+}
+
+.instagram__list-1 {
+  row-gap: 48px;
+}
+
+.instagram__list-2 {
+  row-gap: 38px;
+}
+
+.instagram__list-3 {
+  row-gap: 39px;
+}
+
+.instagram__item {
+  width: 100%;
+}
+
+.footer {
+  margin-top: -1px;
+}
+
+.footer__inner {
+  position: relative;
+}
+
+.footer__main {
+  display: flex;
+  padding-top: 7px;
+  padding-top: 17px;
+}
+
+.footer__message {
+  display: flex;
+  flex-wrap: wrap;
+  background: url("/img/logo-floristik-min.png") no-repeat left;
+  background-position-y: -12px;
+  background-size: 129px;
+  padding-top: 30px;
+  padding-left: 45px;
+}
+
+.footer__heading {
+  display: flex;
+  padding-left: 112px;
+}
+
+.footer__subheader {
+  padding: 61px 32px 10px 112px;
+}
+
+.resend__subheader {
+  font-weight: 500;
+  font-size: 34px;
+  letter-spacing: 0.1px;
+}
+
+.footer__description {
+  font-size: 18px;
+  padding: 43px 132px 43px 117px;
+  line-height: 30px;
+}
+
+.footer__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 132px 57px 117px;
+}
+
+.footer__button, .resend__button {
+  width: 273px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 17px;
+  display: block;
+}
+
+.resend__footer {
+  margin-left: 112px;
+  margin-top: 53px;
+}
+
+.footer__contacts {
+  padding: 30px 73px 0 50px;
+  margin-left: auto;
+}
+
+.footer__numbers {
+  padding: 33px 0 0;
+  line-height: 34.5px;
+}
+
+.footer__subtext {
+  font-size: 17.5px;
+}
+
+
+.mail__footer {
+  display: block;
+  padding-top: 20px;
+  font-size: 20px;
+  letter-spacing: 0.7px;
+}
+
+.footer__media {
+  padding-top: 21px;
+}
+
+.social__media {
+  display: inline-block;
+  height: 26px;
+  width: 26px;
+  background-position: center;
+  background-size: contain;
+  background: $casual-white;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.facebook__link {
+  background: url("/img/stuff/facebook-pink.svg") no-repeat center;
+  width: 20px;
+}
+
+.telegram__link {
+  background: url("/img/stuff/telegram-pink.svg") no-repeat;
+}
+
+.twitter__link {
+  background: url("/img/stuff/twitter-pink.svg") no-repeat;
+}
+
+.youtube__link {
+  background: url("/img/stuff/youtube-pink.svg") no-repeat;
+}
+
+.instagram__link {
+  background: url("/img/stuff/instagram-pink.svg") no-repeat;
+}
+
+.footer__background-right {
+  position: absolute;
+  right: 0px;
+  bottom: 20px;
+  pointer-events: none;
+}
+
+.footer__payment {
+  height: 42px;
+  width: 909px;
+  border: none;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
+.footer__rights {
+  font-size: 18px;
+}
+
+.footer__rights {
+  display: flex;
+  justify-content: space-between;
+  padding: 42px 0px 39px 0px;
+  align-items: center;
+}
+
+.bottom__navigation {
+  font-size: 18px;
+  margin-bottom: -51px;
+  justify-content: center;
+
+  .navigation__link {
+    margin-bottom: -13px;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+}
+
+.footer__bottom {
+  padding-top: 222px;
+}
+
+.footer__bottom-background {
+  height: 55px;
+  position: relative;
+}
+
+.payment__link {
+  display: flex;
+  justify-content: space-around;
+  height: inherit;
+  padding: 5px 20px 0px;
+  overflow: hidden;
+}
+
+.payment__option {
+  display: inline-block;
+  background-size: 100%;
+  margin-top: 6px;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  height: 42px;
+
+  &:hover {
+    background-position-y: -48px;
+  }
+}
+
+.paypal,
+.ibox,
+.liqpay {
+  margin-top: 7px;
+}
+
+.mastercard,
+.webmoney,
+.raiffeisen,
+.privat {
+  margin-top: 3px;
+}
+
+.visa {
+  background-image: url("/img/stuff/visa.png");
+  width: 54px;
+
+  &:hover {
+    background-position-y: -51px;
+  }
+}
+
+.mastercard {
+  background-image: url("/img/stuff/mastercard.png");
+  width: 42px;
+  &:hover {
+    background-position-y: -45px;
+    background-position-x: 1px;
+  }
+}
+
+.paypal {
+  background-image: url("/img/stuff/paypal.png");
+  width: 73px;
+}
+.webmoney {
+  background-image: url("/img/stuff/webmoney.png");
+  width: 26px;
+
+  &:hover {
+    background-position-y: -45px;
+  }
+}
+.raiffeisen {
+  background-image: url("/img/stuff/raiffeisen.png");
+  width: 98px;
+
+  &:hover {
+    background-position-y: -45px;
+  }
+}
+.qiwi {
+  background-image: url("/img/stuff/qiwi.png");
+  width: 57px;
+
+  &:hover {
+    background-position-y: -46px;
+  }
+}
+.privat {
+  background-image: url("/img/stuff/privat.png");
+  width: 26px;
+
+  &:hover {
+    background-position-y: -45px;
+  }
+}
+.mono {
+  background-image: url("/img/stuff/mono.png");
+  width: 28px;
+  margin-top: 1.5px;
+
+  &:hover {
+    background-position-y: -43.7px;
+  }
+}
+.sber {
+  background-image: url("/img/stuff/sber.png");
+  width: 26px;
+
+  &:hover {
+    background-position-y: -46.5px;
+  }
+}
+.ibox {
+  background-image: url("/img/stuff/ibox.png");
+  width: 60px;
+
+  &:hover {
+    background-position-y: -50px;
+  }
+}
+.liqpay {
+  background-image: url("/img/stuff/liqpay.png");
+  width: 94px;
+
+  &:hover {
+    background-position-y: -49px;
+    background-position-x: -1px;
+  }
+}
+.cash {
+  background-image: url("/img/stuff/cash.png");
+  width: 33px;
+  margin-top: 4px;
+
+  &:hover {
+    background-position-y: -47px;
+  }
+}
+
+@import "media.scss";

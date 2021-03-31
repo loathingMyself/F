@@ -1,0 +1,116 @@
+$text: #333;
+$heading-color: #F5E7E6;
+$hover-buttons: #F31D57;
+$feedback-cover: #FF8AAD;
+$telegram: #2F89CE;
+$viber: #7C509A;
+$main-background: #FFCADA;
+$buttons-back: #FB638C;
+$big-buttons-font: #FFECF1;
+$casual-white: white;
+$box-shadow-color: #e8e8e8;
+$offer-input: #DAB4BE;
+$offer-placeholder: #828282;
+$input-border-before: #dddddd;
+$instructions-background: #C9769F;
+$instagram: #4394F1;
+
+.heading, .header, .offer , .footer {
+    background-color: $heading-color;
+}
+
+.header__button, .offer__submit {
+    background-color: $buttons-back;
+    color: $big-buttons-font;
+
+    &:hover {
+        background-color: $hover-buttons;
+    }
+}
+
+a {
+    color: $text;
+}
+
+.navigation__link:hover {
+   color: $hover-buttons;
+}
+
+.contacts__telegram {
+    background-color: $telegram;
+}
+
+.contacts__viber {
+    background-color: $viber;
+}
+
+
+.heading__feedback {
+    background-color: $main-background;
+
+    &:hover {
+        background-color: $feedback-cover;
+    }
+}
+
+.product__item-fake, .product__buy, .offer__submit {
+    background-color: $casual-white;
+}
+
+.product__buy {
+    color: $buttons-back;
+    border-color: $buttons-back;
+}
+
+.product__item:hover {
+    .product__buy {
+        background-color: $buttons-back;
+        color: $casual-white;
+    }
+}
+
+.product__subtext {
+    color: $buttons-back;
+}
+
+input {
+    &:focus {
+        border-color: $buttons-back;
+    }
+
+    &::placeholder {
+        color: $offer-placeholder;
+    }
+}
+
+input[type="checkbox"]:checked, input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before, .offer__submit {
+    background-color: $buttons-back;
+}
+
+.instructions {
+    background-color: $instructions-background;
+    color: $casual-white;
+}
+
+.instagram__button {
+    background-color: $instagram;
+    color: $casual-white;
+}
+
+.footer__button, .resend__button {
+    background-color: $buttons-back;
+    color: $casual-white;
+
+    &:hover {
+        background-color: $hover-buttons;
+    }
+}
+
+.footer__payment {
+    background-color: $casual-white
+}
+
+.footer__bottom-background {
+    background-color: $instructions-background;
+}
